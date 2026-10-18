@@ -52,6 +52,8 @@ if __name__ == "__main__":
 * **Flujo Sanitizado:** Se implementa un flujo de trabajo en **n8n** (exportado de forma segura en `n8n/riosec-alert-workflow-sanitized.json` sin credenciales sensibles).
 * **Comportamiento del Flujo:** El orquestador recibe el evento procesado, formatea la estructura del mensaje de seguridad y lo canaliza de forma automatizada.
 
+![Flujo de Trabajo Logístico y Orquestación en n8n](Captura de pantalla 2026-10-18 022326.png)
+
 ---
 
 ## 📲 4. Entrega de Alertas en Tiempo Real (Telegram)
