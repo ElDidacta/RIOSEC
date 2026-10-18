@@ -21,7 +21,7 @@
 ---
 
 ## 📂 Estructura de la Documentación
-Toda la ingeniería, diseño de redes y especificaciones técnicas del laboratorio se encuentran detalladas en la carpeta [`documentos/`](documentos/):
+Toda la ingeniería, diseño de redes y especificaciones técnicas del laboratorio se encuentran detalladas en la carpeta [`documentos/`](docs/):
 * `01-resumen-ejecutivo.md` — Visión general y alcance del proyecto.
 * `02-arquitectura-general.md` — Topología física y esquemas lógicos.
 * `03-active-directory.md` — Gestión de identidades, OUs y directivas de grupo.
