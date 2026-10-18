@@ -1,6 +1,6 @@
 # 05 — Monitoreo de Seguridad con Wazuh
 
-![Panel de Monitoreo Wazuh](Imagen de WhatsApp 2026-10-18 a las 2.14.38 AM.jpeg)
+<img src="Imagen de WhatsApp 2026-10-18 a las 2.14.38 AM.jpeg" alt="Panel de Monitoreo Wazuh" width="700">
 
 ## 🛡️ 1. Arquitectura del SIEM
 Para la recolección, correlación y análisis de eventos de seguridad, **RIOSEC** implementa el stack de **Wazuh** alojado de manera centralizada en el equipo físico con **Debian Linux**. 
@@ -15,12 +15,12 @@ Los equipos del laboratorio (tanto virtuales como físicos) se comunican con el 
 * **Estación Cliente (Windows 10):** Monitoreada para detectar ejecuciones de procesos sospechosos, conexiones de red e intentos de inicio de sesión.
 * **Entornos Linux (Mint / Debian):** Integrados para control de integridad de archivos (FIM) y auditoría de comandos del sistema.
 
-![Agentes Enrolados en el Dashboard de Wazuh](Imagen de WhatsApp 2026-10-17 a las 18:05:50 (2).jpeg)
+<img src="Imagen de WhatsApp 2026-10-17 a las 18:05:50 (2).jpeg" alt="Agentes Enrolados en el Dashboard de Wazuh" width="700">
 
 ---
 
 ## 📊 3. Recorrido de los Eventos y Alertas
-![Panel de Alertas Generadas en Wazuh](alertas.jpeg)
+<img src="alertas.jpeg" alt="Panel de Alertas Generadas en Wazuh" width="700">
 
 1. **Generación:** El sistema operativo o aplicación genera un registro de evento (ej. Event Viewer en Windows o syslog en Linux).
 2. **Captura y Envío:** El agente de Wazuh reenvía la telemetría cifrada hacia el Wazuh Manager en el servidor Debian.
