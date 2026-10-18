@@ -61,3 +61,5 @@ if __name__ == "__main__":
 * **Resultado:** Cada vez que Wazuh detecta un evento anómalo que cumple con los umbrales definidos, el sistema emite una alerta directa al dispositivo móvil con el contexto técnico del incidente.
 
 <img src="Captura de pantalla 2026-10-18 032427.png" alt="Alerta de Seguridad Recibida en Telegram" width="400">
+<img width="1137" height="780" alt="image" src="https://github.com/user-attachments/assets/4036fa6c-f39e-4c5f-835c-9ce7bd47a5c1" />
+
