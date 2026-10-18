@@ -11,6 +11,8 @@
 ## 📋 Resumen Ejecutivo
 **RIOSEC** es un entorno de infraestructura híbrida diseñado para simular un Centro de Operaciones de Seguridad (SOC) corporativo de baja complejidad. El proyecto integra la administración centralizada de identidades, la recolección y análisis de telemetría mediante un SIEM y la orquestación de flujos de respuesta automatizados para la notificación de incidentes en tiempo real.
 
+Para la gestión de seguridad, el entorno implementa **Wazuh**, una plataforma de código abierto que combina capacidades de SIEM y XDR (Detección y Respuesta Extendidas). Esta solución resulta crítica para la protección activa del laboratorio, ya que está capacitada para identificar y mitigar amenazas avanzadas como **ransomware, rootkits y malware en general**. A través del monitoreo de integridad de archivos (FIM) y el análisis de comportamiento, Wazuh detecta patrones de ejecución sospechosos o intentos de cifrado masivo, permitiendo aislar hosts infectados o bloquear procesos maliciosos en fases tempranas antes de que comprometan la infraestructura.
+
 ---
 
 ## 🏛️ Arquitectura y Componentes
