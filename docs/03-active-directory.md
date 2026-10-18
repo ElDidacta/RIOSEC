@@ -25,7 +25,8 @@ Para emular un entorno corporativo estructurado, se organizaron los objetos de A
 ### Evidencia AD-01 — Estructura de Unidades Organizativas (OUs)
 * **Objetivo:** Documentar la organización jerárquica y lógica del dominio de laboratorio (`riosec.local`).
 * **Procedimiento:** Apertura de la consola de *Usuarios y equipos de Active Directory* (`dsa.msc`) en Windows Server 2022.
-* **Evidencia:** 
+* **Evidencia:**
+
   <img width="845" height="621" alt="Captura de pantalla 2026-10-15 170915" src="https://github.com/user-attachments/assets/05dcffe4-890c-41a6-b11b-d2680c3d07cd" />
 
 * **Resultado observado:** Se aprecia el despliegue de las unidades organizativas y la correcta asignación de cuentas de usuario en el directorio.
