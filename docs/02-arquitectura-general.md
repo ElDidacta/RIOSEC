@@ -8,6 +8,7 @@ El diseño de **RIOSEC** se divide en una capa física (hardware local intercone
 ## 🔌 1. Topología Física
 La infraestructura física consta de dos equipos principales conectados a la red local (LAN) bajo asignación por DHCP y conectividad IP directa:
 - **ThinkPad E15 (Host Principal):** Sistema operativo anfitrión en Windows, encargado de correr el hipervisor VirtualBox y las máquinas virtuales del dominio y pruebas.
+  
 - **HP con Debian Linux (Servidor de Monitoreo):** Equipo dedicado a alojar el backend de seguridad, recolectando la telemetría y ejecutando los flujos de automatización.
 
 <img width="612" height="437" alt="image" src="https://github.com/user-attachments/assets/f7965f6c-5bdd-4ff2-8a7e-17387c65d0ac" />
@@ -20,6 +21,12 @@ Dentro del entorno virtualizado de la ThinkPad, los componentes se distribuyen d
 - **Controlador de Dominio:** Windows Server 2022 gestionando el directorio activo `riosec.local`.
 - **Estación Cliente:** Windows 10 unido al dominio corporativo de laboratorio.
 - **Estaciones de Pruebas:** Entornos basados en Linux para simulación de escenarios y validaciones de red.
+  
+  ## maquina Lenovo Thinkpad 
+<img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/be6a2154-3e2b-40dd-a42b-22706ed1b245" />
+
+## Maquina HP
+<img width="512" height="388" alt="image" src="https://github.com/user-attachments/assets/c8ae6f88-2f86-40d0-aa91-bb29e527f64d" />
 
 ---
 
