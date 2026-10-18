@@ -1,6 +1,6 @@
 # 05 — Monitoreo de Seguridad con Wazuh
 
-<img src="assets/wazuh_loading.jpeg" alt="Panel de Monitoreo Wazuh - Pantalla de Carga" width="700">
+
 
 ## 🛡️ 1. Arquitectura del SIEM
 Para la recolección, evaluación y análisis de eventos de seguridad, **RIOSEC** implementa el stack de **Wazuh** alojado de manera centralizada en el equipo físico con **Debian Linux**. 
