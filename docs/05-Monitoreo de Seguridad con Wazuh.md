@@ -1,9 +1,10 @@
 # 05 — Monitoreo de Seguridad con Wazuh
 
-<img src="assets/wazuh_loading.jpeg" alt="Panel de Monitoreo Wazuh - Carga" width="700">
+<img width="1600" height="900" alt="WhatsApp Image 2026-10-18 at 2 14 38 AM" src="https://github.com/user-attachments/assets/045d8e24-f079-4ea4-bc57-dacadfb2b1cc" />
+
 
 ## 🛡️ 1. Arquitectura del SIEM
-Para la recolección, evaluación y análisis de eventos de seguridad, **RIOSEC** implementa el stack de **Wazuh** alojado de manera centralizada en el equipo físico con **Debian Linux**. 
+Para la recolección, evaluación y análisis de eventos de seguridad, **RIOSEC** implementa el stack de **Wazuh** alojado de manera centralizada en el equipo físico con **Debian Linux: 192.168.1.11**. 
 - **Wazuh Manager:** Recibe las conexiones de los agentes, procesa los registros (*logs*) y ejecuta el motor de reglas de detección.
 - **Wazuh Indexer & Dashboard:** Componentes encargados del almacenamiento indexado de los eventos y de proporcionar la interfaz web de visualización y consulta para el analista.
 
@@ -12,7 +13,8 @@ Para la recolección, evaluación y análisis de eventos de seguridad, **RIOSEC*
 ## 🔗 2. Enrolamiento y Estado de Agentes
 Los equipos del laboratorio (tanto virtuales como físicos) se comunican con el servidor central mediante agentes instalados en cada sistema operativo, permitiendo un monitoreo en tiempo real desde el dashboard central (`192.168.1.11`):
 
-<img src="assets/wazuh_agents_list.jpeg" alt="Listado de Agentes Enrolados en Wazuh" width="700">
+<img width="1600" height="900" alt="WhatsApp Image 2026-10-18 at 2 14 38 AM" src="https://github.com/user-attachments/assets/04f06b78-2c6d-4afc-a765-88b7b122ed6c" />
+
 
 - **Controlador de Dominio (`DC-Server2022` / `WIN-F80AKID3RA`):** Windows Server 2022 encargado de reportar eventos críticos del sistema, cambios de políticas y registros de autenticación corporativa.
 - **Estación Cliente (`DESKTOP-DG4EGDT`):** Windows 10 monitorizado para detectar ejecuciones de procesos sospechosos, conexiones de red e intentos de inicio de sesión.
@@ -21,7 +23,8 @@ Los equipos del laboratorio (tanto virtuales como físicos) se comunican con el 
 ---
 
 ## 📊 3. Recorrido de los Eventos y Alertas
-<img src="assets/alertas.jpeg" alt="Panel de Alertas Generadas en Wazuh" width="700">
+<img width="1577" height="861" alt="alertas" src="https://github.com/user-attachments/assets/95270629-07fc-424f-85cb-d3158ca1cd47" />
+
 
 1. **Generación:** El sistema operativo o aplicación genera un registro de evento (ej. Event Viewer en Windows o syslog en Linux).
 2. **Captura y Envío:** El agente de Wazuh reenvía la telemetría cifrada hacia el Wazuh Manager en el servidor Debian.
