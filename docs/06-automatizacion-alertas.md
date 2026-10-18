@@ -55,11 +55,22 @@ if __name__ == "__main__":
 <img src="Captura de pantalla 2026-10-18 022326.png" alt="Flujo de Trabajo Logístico y Orquestación en n8n" width="600">
 
 ---
-
 ## 📲 4. Entrega de Alertas en Tiempo Real (Telegram)
-* **Notificaciones Operativas:** El nodo final del flujo de n8n se comunica con la API de Bot de Telegram para enviar notificaciones inmediatas al analista.
+
+* **Notificaciones Operativas:** El nodo final del flujo de n8n se comunica con la API del Bot de Telegram para enviar notificaciones inmediatas al analista.
 * **Resultado:** Cada vez que Wazuh detecta un evento anómalo que cumple con los umbrales definidos, el sistema emite una alerta directa al dispositivo móvil con el contexto técnico del incidente.
 
-<img src="Captura de pantalla 2026-10-18 032427.png" alt="Alerta de Seguridad Recibida en Telegram" width="400">
-<img width="1137" height="780" alt="image" src="https://github.com/user-attachments/assets/4036fa6c-f39e-4c5f-835c-9ce7bd47a5c1" />
+### Evidencias de la Notificación
+
+<p align="center">
+  <img src="Captura de pantalla 2026-10-18 032427.png" alt="Alerta de Seguridad Recibida en Telegram" width="350">
+  <br>
+  <em>Figura 4.1: Notificación de alerta recibida en el dispositivo móvil.</em>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4036fa6c-f39e-4c5f-835c-9ce7bd47a5c1" alt="Flujo de Notificación en n8n" width="700">
+  <br>
+  <em>Figura 4.2: Configuración del flujo de automatización y envío en n8n.</em>
+</p>
 
