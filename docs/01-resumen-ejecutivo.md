@@ -7,11 +7,11 @@
 El laboratorio aborda el desafío de integrar tecnologías heterogéneas (sistemas operativos Windows y Linux, virtualización e interfaces de programación de aplicaciones) bajo una arquitectura cohesiva. En lugar de configuraciones aisladas, RIOSEC conecta la telemetría de los sistemas operativos directamente con una plataforma de análisis centralizada.
 
 ## 🚀 Estado Actual de Implementación
-* **Infraestructura Virtual y Redes:** Despliegue de hipervisor y máquinas virtuales interconectadas mediante topología de laboratorio.
-* **Directorio Activo:** Configuración lógica del dominio `riosec.local`, creación de Unidades Organizativas (OUs), gestión de usuarios/grupos de prueba y unión exitosa de un equipo cliente Windows 10.
-* **Monitoreo de Seguridad (SIEM):** Instalación y configuración de Wazuh (Manager e Indexer/Dashboard) con agentes enrolados para la recolección de eventos.
-* **Automatización y Alertas:** Procesamiento de telemetría mediante scripts de Python y flujos en n8n integrados para notificaciones operativas.
+- **Infraestructura Virtual y Redes:** Despliegue de hipervisor y máquinas virtuales interconectadas mediante topología de laboratorio.
+- **Directorio Activo y Hardening:** Configuración lógica del dominio `riosec.local`, creación de Unidades Organizativas (OUs), gestión de usuarios/grupos de prueba, unión exitosa de un equipo cliente Windows 10 y aplicación de Directivas de Grupo (GPO) iniciales.
+- **Monitoreo de Seguridad (SIEM):** Instalación y configuración de Wazuh (Manager e Indexer/Dashboard) con agentes enrolados para la recolección de eventos.
+- **Automatización y Alertas:** Procesamiento de telemetría mediante scripts de Python y flujos en n8n integrados para notificaciones operativas.
 
 ## 📌 Limitaciones y Próximos Pasos Planificados
-* **Políticas de Grupo (GPO):** En esta primera versión (*MVP*), las directivas de seguridad centralizadas mediante GPO se encuentran pendientes de implementación para fases posteriores de endurecimiento (*hardening*).
-* **Casos de Prueba Avanzados:** Expansión de escenarios controlados de simulación de amenazas para la afinación de reglas de detección en el SIEM.
+- **Ampliación de Políticas:** Evolución del despliegue de GPO hacia esquemas avanzados de seguridad corporativa y restricciones de ejecución de software.
+- **Casos de Prueba Avanzados:** Expansión de escenarios controlados de simulación de amenazas para la afinación de reglas de detección en el SIEM.
