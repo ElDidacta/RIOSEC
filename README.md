@@ -1,4 +1,4 @@
-# RIOSEC — Infraestructura, Directorio Activo y SOC
+# RIOSEC — Infraestructura IT, Directorio Activo y SOC
 <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/cfec051d-009a-4c91-bf58-cde2d8ea6f68" />
 
 
