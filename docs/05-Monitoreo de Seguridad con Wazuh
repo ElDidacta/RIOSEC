@@ -12,7 +12,8 @@ Para la recolección, correlación y análisis de eventos de seguridad, **RIOSEC
 Los equipos del laboratorio (tanto virtuales como físicos) se comunican con el servidor central mediante agentes instalados en cada sistema operativo:
 * **Controlador de Dominio (Windows Server 2022):** Reporta eventos críticos del sistema de archivos, cambios de políticas, registros de autenticación y actividad de Active Directory.
 * **Estación Cliente (Windows 10):** Monitoreada para detectar ejecuciones de procesos sospechosos, conexiones de red e intentos de inicio de sesión.
-* **Entornos Linux (Mint / Kali / Debian):** Integrados para control de integridad de archivos (FIM) y auditoría de comandos del sistema.
+* **Entornos Linux (Mint / Debian):** Integrados para control de integridad de archivos (FIM) y auditoría de comandos del sistema.
+![Agentes Enrolados en el Dashboard de Wazuh](Imagen de WhatsApp 2026-10-17 a las 18:05:50 (2).jpeg)
 
 ---
 
