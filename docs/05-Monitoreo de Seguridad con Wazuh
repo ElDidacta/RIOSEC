@@ -4,16 +4,16 @@
 
 ## 🛡️ 1. Arquitectura del SIEM
 Para la recolección, correlación y análisis de eventos de seguridad, **RIOSEC** implementa el stack de **Wazuh** alojado de manera centralizada en el equipo físico con **Debian Linux**. 
-* **Wazuh Manager:** Recibe las conexiones de los agentes, procesa los registros (*logs*) y ejecuta el motor de reglas de detección.
-* **Wazuh Indexer & Dashboard:** Componentes encargados del almacenamiento indexado de los eventos y de proveer la interfaz web de visualización y consulta para el analista.
+- **Wazuh Manager:** Recibe las conexiones de los agentes, procesa los registros (*logs*) y ejecuta el motor de reglas de detección.
+- **Wazuh Indexer & Dashboard:** Componentes encargados del almacenamiento indexado de los eventos y de proveer la interfaz web de visualización y consulta para el analista.
 
 ---
 
 ## 🔗 2. Enrolamiento de Agentes
 Los equipos del laboratorio (tanto virtuales como físicos) se comunican con el servidor central mediante agentes instalados en cada sistema operativo:
-* **Controlador de Dominio (Windows Server 2022):** Reporta eventos críticos del sistema de archivos, cambios de políticas, registros de autenticación y actividad de Active Directory.
-* **Estación Cliente (Windows 10):** Monitoreada para detectar ejecuciones de procesos sospechosos, conexiones de red e intentos de inicio de sesión.
-* **Entornos Linux (Mint / Debian):** Integrados para control de integridad de archivos (FIM) y auditoría de comandos del sistema.
+- **Controlador de Dominio (Windows Server 2022):** Reporta eventos críticos del sistema de archivos, cambios de políticas, registros de autenticación y actividad de Active Directory.
+- **Estación Cliente (Windows 10):** Monitoreada para detectar ejecuciones de procesos sospechosos, conexiones de red e intentos de inicio de sesión.
+- **Entornos Linux (Mint / Debian):** Integrados para control de integridad de archivos (FIM) y auditoría de comandos del sistema.
 
 <img src="Imagen de WhatsApp 2026-10-17 a las 18:05:50 (2).jpeg" alt="Agentes Enrolados en el Dashboard de Wazuh" width="700">
 
