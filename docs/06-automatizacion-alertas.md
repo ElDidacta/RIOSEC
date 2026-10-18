@@ -52,7 +52,7 @@ if __name__ == "__main__":
 * **Flujo Sanitizado:** Se implementa un flujo de trabajo en **n8n** (exportado de forma segura en `n8n/riosec-alert-workflow-sanitized.json` sin credenciales sensibles).
 * **Comportamiento del Flujo:** El orquestador recibe el evento procesado, formatea la estructura del mensaje de seguridad y lo canaliza de forma automatizada.
 
-![Flujo de Trabajo Logístico y Orquestación en n8n](Captura de pantalla 2026-10-18 022326.png)
+<img src="Captura de pantalla 2026-10-18 022326.png" alt="Flujo de Trabajo Logístico y Orquestación en n8n" width="600">
 
 ---
 
@@ -60,4 +60,4 @@ if __name__ == "__main__":
 * **Notificaciones Operativas:** El nodo final del flujo de n8n se comunica con la API de Bot de Telegram para enviar notificaciones inmediatas al analista.
 * **Resultado:** Cada vez que Wazuh detecta un evento anómalo que cumple con los umbrales definidos, el sistema emite una alerta directa al dispositivo móvil con el contexto técnico del incidente.
 
-![Alerta de Seguridad Recibida en Telegram](Captura de pantalla 2026-10-18 032427.png)
+<img src="Captura de pantalla 2026-10-18 032427.png" alt="Alerta de Seguridad Recibida en Telegram" width="400">
