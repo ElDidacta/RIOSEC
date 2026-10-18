@@ -22,10 +22,10 @@ Dentro del entorno virtualizado de la ThinkPad, los componentes se distribuyen d
 - **Estación Cliente:** Windows 10 unido al dominio corporativo de laboratorio.
 - **Estaciones de Pruebas:** Entornos basados en Linux para simulación de escenarios y validaciones de red.
   
-  ## maquina Lenovo Thinkpad 
+  ## Maquina Lenovo Thinkpad (VirtualBox)
 <img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/be6a2154-3e2b-40dd-a42b-22706ed1b245" />
 
-## Maquina HP
+## Maquina HP (Debian 13)
 <img width="512" height="388" alt="image" src="https://github.com/user-attachments/assets/c8ae6f88-2f86-40d0-aa91-bb29e527f64d" />
 
 ---
