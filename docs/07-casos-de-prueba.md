@@ -22,3 +22,10 @@ Validar que el entorno de infraestructura y monitoreo de **RIOSEC** reacciona co
 * **Resultado Esperado:** Alerta inmediata de Wazuh por cambio de hash o modificación de permisos (FIM - File Integrity Monitoring).
 * **Resultado Observado:** El agente detectó la alteración del archivo en tiempo real y generó un registro de alerta detallando el cambio exacto.
 * **Conclusión:** El monitoreo de integridad funciona de manera óptima para la detección temprana de modificaciones maliciosas.
+
+---
+
+<img width="1577" height="861" alt="alertas" src="https://github.com/user-attachments/assets/3cb3c0c6-dad9-4741-9f13-9c9f7a7e6fdd" />
+
+
+
