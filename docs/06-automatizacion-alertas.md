@@ -59,3 +59,5 @@ if __name__ == "__main__":
 ## 📲 4. Entrega de Alertas en Tiempo Real (Telegram)
 * **Notificaciones Operativas:** El nodo final del flujo de n8n se comunica con la API de Bot de Telegram para enviar notificaciones inmediatas al analista.
 * **Resultado:** Cada vez que Wazuh detecta un evento anómalo que cumple con los umbrales definidos, el sistema emite una alerta directa al dispositivo móvil con el contexto técnico del incidente.
+
+![Alerta de Seguridad Recibida en Telegram](Captura de pantalla 2026-10-18 032427.png)
