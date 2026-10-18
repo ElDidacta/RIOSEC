@@ -9,7 +9,7 @@ El laboratorio RIOSEC se compone de recursos físicos y virtualizados interconec
 | **HP Físico** | Debian Linux | Servidor de monitoreo SOC, backend de Wazuh y automatización. | Operativo |
 | **Windows Server 2022** | Windows Server | Controlador de Dominio principal (`riosec.local`), DNS y Active Directory. | Operativo |
 | **Windows 10** | Windows 10 | Estación de trabajo cliente integrada al dominio de laboratorio. | Operativo |
-| **Kali Linux / Linux Mint** | Linux | Entornos virtuales para pruebas controladas y validación de agentes. | Operativo |
+| **Linux Mint** | Linux | Entornos virtuales para pruebas controladas y validación de agentes. | Operativo |
 
 ---
 
