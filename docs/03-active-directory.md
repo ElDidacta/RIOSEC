@@ -8,9 +8,22 @@ El laboratorio implementa un servicio de directorio centralizado bajo el dominio
 ## 📂 2. Estructura Lógica (Unidades Organizativas - OUs)
 Para emular un entorno corporativo estructurado, se organizaron los objetos de Active Directory mediante Unidades Organizativas (OUs):
 - **`riosec.local`**
-  * `Usuarios/` — Contenedor para cuentas de usuario estándar y de prueba.
-  * `Equipos/` — Contenedor para las estaciones de trabajo integradas al dominio.
-  * `Departamentos/` — Segmentación lógica orientada a simular áreas de una organización.
+  * **`Agro_y_Servicios/`** — Contenedor principal para las áreas operativas de negocio:
+    * `Administracion/` — Gestión administrativa general.
+      * `Gerencia/` — Subunidad para la dirección y alta gerencia.
+    * `Agronomia/` — Operaciones técnicas agropecuarias.
+    * `Agroquimicos/` — Control y manejo de insumos químicos.
+    * `Carniceria/` — Unidad de negocio cárnico.
+    * `Freteria/` — Gestión del área de ferretería.
+    * `Forrajeria/` — Operaciones de forrajes.
+    * **`Departamento IT/`** — Segmentación lógica orientada a la gestión técnica:
+      * `Ciberseguridad/` — Recursos y controles de seguridad defensiva.
+      * `Infraestructura/` — Administración de servidores y red.
+      * `Soporte/` — Asistencia a usuarios y resolución de incidencias.
+    * `Supermercado/` — Unidad de gestión comercial minorista.
+    * `Verduleria/` — Operaciones del sector verdulería.
+    * `Veterinaria/` — Área de servicios veterinarios.
+    * `YPF/` — Sector de estación de servicios y combustibles.
 
 ---
 
@@ -23,20 +36,19 @@ Para emular un entorno corporativo estructurado, se organizaron los objetos de A
 ## 📌 4. Gestión de Políticas y Evidencias de Configuración
 
 ### Evidencia AD-01 — Estructura de Unidades Organizativas (OUs)
-* **Objetivo:** Documentar la organización jerárquica y lógica del dominio de laboratorio (`riosec.local`).
-* **Procedimiento:** Apertura de la consola de *Usuarios y equipos de Active Directory* (`dsa.msc`) en Windows Server 2022.
-* **Evidencia:**
+- **Objetivo:** Documentar la organización jerárquica y lógica del dominio de laboratorio (`riosec.local`).
+- **Procedimiento:** Apertura de la consola de *Usuarios y equipos de Active Directory* (`dsa.msc`) en Windows Server 2022.
+- **Evidencia:**
 
-  <img width="845" height="621" alt="Captura de pantalla 2026-10-15 170915" src="https://github.com/user-attachments/assets/05dcffe4-890c-41a6-b11b-d2680c3d07cd" />
+  <img width="845" height="621" alt="Captura de pantalla de OUs" src="https://github.com/user-attachments/assets/05dcffe4-890c-41a6-b11b-d2680c3d07cd" />
 
-* **Resultado observado:** Se aprecia el despliegue de las unidades organizativas y la correcta asignación de cuentas de usuario en el directorio.
+- **Resultado observado:** Se aprecia el despliegue detallado de las unidades organizativas y la jerarquía de subunidades por áreas de negocio e infraestructura técnica en el directorio.
 
 ### Evidencia AD-02 — Aplicación de Directiva de Grupo (GPO)
-* **Objetivo:** Documentar el endurecimiento (*hardening*) inicial del entorno mediante la restricción de configuraciones del sistema a los usuarios del dominio.
-* **Procedimiento:** Configuración de una GPO (`Política_General`) desde el Editor de administración de directivas de grupo (`gpmc.msc`), aplicando la regla de prohibición de acceso al Panel de control y Configuración de PC.
-* **Evidencia:** 
+- **Objetivo:** Documentar el endurecimiento (*hardening*) inicial del entorno mediante la restricción de configuraciones del sistema a los usuarios del dominio.
+- **Procedimiento:** Configuración de una GPO (`Política_General`) desde el Editor de administración de directivas de grupo (`gpmc.msc`), aplicando la regla de prohibición de acceso al Panel de control y Configuración de PC.
+- **Evidencia:** 
 
- <img width="826" height="672" alt="image" src="https://github.com/user-attachments/assets/564fe7ea-b6ee-4018-9ced-8040a79a4c47" />
+ <img width="826" height="672" alt="image GPO" src="https://github.com/user-attachments/assets/564fe7ea-b6ee-4018-9ced-8040a79a4c47" />
 
-
-* **Resultado observado:** Se observa la directiva activa aplicada sobre los contenedores para restringir el cambio de parámetros del sistema operativo[cite: 25].
+- **Resultado observado:** Se observa la directiva activa aplicada sobre los contenedores para restringir el cambio de parámetros del sistema operativo.
