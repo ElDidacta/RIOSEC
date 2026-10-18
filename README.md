@@ -1,5 +1,6 @@
 # RIOSEC — Infraestructura, Directorio Activo y SOC
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/5ad65370-cec3-4f43-94eb-718e531283e4" />
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/cfec051d-009a-4c91-bf58-cde2d8ea6f68" />
+
 
 <p align="center">
   <b>Laboratorio de ingeniería en ciberseguridad defensiva y automatización de eventos de seguridad.</b>
