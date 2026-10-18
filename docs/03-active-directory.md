@@ -33,6 +33,8 @@ Para emular un entorno corporativo estructurado, se organizaron los objetos de A
 * **Objetivo:** Documentar el endurecimiento (*hardening*) inicial del entorno mediante la restricción de configuraciones del sistema a los usuarios del dominio.
 * **Procedimiento:** Configuración de una GPO (`Política_General`) desde el Editor de administración de directivas de grupo (`gpmc.msc`), aplicando la regla de prohibición de acceso al Panel de control y Configuración de PC.
 * **Evidencia:** 
-  <img width="1107" height="731" alt="Captura de pantalla 2026-10-16 004514" src="https://github.com/user-attachments/assets/c1c8ab61-9ed8-47a7-a6e7-48c50427d772" />
+
+ <img width="826" height="672" alt="image" src="https://github.com/user-attachments/assets/564fe7ea-b6ee-4018-9ced-8040a79a4c47" />
+
 
 * **Resultado observado:** Se observa la directiva activa aplicada sobre los contenedores para restringir el cambio de parámetros del sistema operativo[cite: 25].
