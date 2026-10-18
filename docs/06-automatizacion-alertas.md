@@ -5,9 +5,10 @@ Para reducir el tiempo de respuesta ante incidentes y evitar la supervisión man
 
 ---
 
-## 🐍 2. Integración con la API de Wazuh (Python)
-* **Consulta de Alertas:** Se desarrollan scripts en **Python** ubicados en la ruta de código del proyecto para interactuar directamente con la API REST de Wazuh.
-* **Procesamiento:** Los scripts realizan consultas programadas o mediante webhooks para filtrar eventos según su nivel de severidad y extraer los campos críticos (origen, regla activada, usuario y host afectado).
+## 🐍 2. Servicio de Inventario de Agentes (Python & Flask)
+
+* **Propósito del Servicio:** Este componente actúa como un servicio auxiliar en el ecosistema RIOSEC. Mientras que **n8n** gestiona de forma nativa la recepción de alertas de Wazuh y su envío a Telegram, este script en Python provee un inventario centralizado de los hosts del laboratorio.
+* **Procesamiento Local:** El servicio expone un endpoint centralizado (`/agentes`) que realiza lecturas optimizadas sobre la base de datos interna de Wazuh (`global.db`) mediante SQLite, entregando la lista de agentes registrados en formato JSON para el consumo del flujo de automatización.
 ## 📄 Código Fuente del Servicio (`riosec_api.py`):
 
 ```python
