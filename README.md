@@ -3,7 +3,7 @@
 
 
 <p align="center">
-  <b>Laboratorio de ingeniería en ciberseguridad defensiva y automatización de eventos de seguridad.</b>
+  <b> Practiccas de ingeniería en ciberseguridad defensiva y automatización de eventos de seguridad.</b>
 </p>
 
 ---
