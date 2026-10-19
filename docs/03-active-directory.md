@@ -61,6 +61,6 @@ Para emular un entorno corporativo estructurado, se organizaron los objetos de A
 
 ---
 
-<img width="512" height="280" alt="image" src="https://github.com/user-attachments/assets/85f5465f-dcc0-473a-b93a-884ce679b454" />
+<img width="1920" height="1053" alt="imagen" src="https://github.com/user-attachments/assets/1e16b41b-ac6b-4988-8f28-4366d6362b4b" />
 
   
