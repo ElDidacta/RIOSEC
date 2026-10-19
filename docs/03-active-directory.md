@@ -15,7 +15,7 @@ Para emular un entorno corporativo estructurado, se organizaron los objetos de A
     * `Agroquimicos/` — Control y manejo de insumos químicos.
     * `Carniceria/` — Unidad de negocio cárnico.
     * `Freteria/` — Gestión del área de ferretería.
-    * `Forrajeria/` — Operaciones de forrajes.
+    * `Forrajeria/` — Operations de forrajes.
     * **`Departamento IT/`** — Segmentación lógica orientada a la gestión técnica:
       * `Ciberseguridad/` — Recursos y controles de seguridad defensiva.
       * `Infraestructura/` — Administración de servidores y red.
@@ -45,10 +45,27 @@ Para emular un entorno corporativo estructurado, se organizaron los objetos de A
 - **Resultado observado:** Se aprecia el despliegue detallado de las unidades organizativas y la jerarquía de subunidades por áreas de negocio e infraestructura técnica en el directorio.
 
 ### Evidencia AD-02 — Aplicación de Directiva de Grupo (GPO)
-- **Objetivo:** Documentar el endurecimiento (*hardening*) inicial del entorno mediante la restricción de configuraciones del sistema a los usuarios del dominio.
+- **Objetivo:** Documentar el endurecimiento (*hardening*) initial del entorno mediante la restricción de configuraciones del sistema a los usuarios del dominio.
 - **Procedimiento:** Configuración de una GPO (`Política_General`) desde el Editor de administración de directivas de grupo (`gpmc.msc`), aplicando la regla de prohibición de acceso al Panel de control y Configuración de PC.
 - **Evidencia:** 
 
  <img width="826" height="672" alt="image GPO" src="https://github.com/user-attachments/assets/564fe7ea-b6ee-4018-9ced-8040a79a4c47" />
 
 - **Resultado observado:** Se observa la directiva activa aplicada sobre los contenedores para restringir el cambio de parámetros del sistema operativo.
+
+### Evidencia AD-03 — Verificación de Servicios Críticos y de Directorio en Ejecución
+- **Objetivo:** Validar y documentar mediante comandos de administración de sistemas que los servicios fundamentales del Controlador de Dominio (Active Directory, DNS, Kerberos, SMB) y de transferencia (FTP) se encuentran activos y operativos.
+- **Procedimiento:** Ejecución de consulta de servicios en ejecución mediante el cmdlet de PowerShell `Get-Service` con filtrado de estado activo (`Running`).
+- **Evidencia:** 
+
+ *(Nota: Puedes reemplazar aquí los enlaces de tus capturas de pantalla de PowerShell o agruparlas según prefieras)*
+ 
+ <img width="700" alt="Evidencia de servicios activos en PowerShell" src="https://github.com/user-attachments/assets/TU_ENLACE_DE_CAPTURA" />
+
+- **Resultado observado:** Se confirma la correcta ejecución de los servicios esenciales del ecosistema:
+  - **`NTDS`**: Servicios de dominio de Active Directory.
+  - **`DNS`**: Servidor de resolución de nombres.
+  - **`Kdc`**: Centro de distribución de claves Kerberos.
+  - **`LanmanServer`**: Servicio de compartición de archivos y recursos SMB.
+  - **`ftpsvc`**: Servicio FTP de Microsoft para la distribución de recursos en red.
+  - **`WazuhSvc`**: Agente de monitoreo y seguridad integrado en la infraestructura.
