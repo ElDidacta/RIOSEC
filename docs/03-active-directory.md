@@ -39,8 +39,8 @@ Para emular un entorno corporativo estructurado, se organizaron los objetos de A
 - **Objetivo:** Documentar la organización jerárquica y lógica del dominio de laboratorio (`riosec.local`).
 - **Procedimiento:** Apertura de la consola de *Usuarios y equipos de Active Directory* (`dsa.msc`) en Windows Server 2022.
 - **Evidencia:**
-
-  <img width="845" height="621" alt="Captura de pantalla de OUs" src="[https://github.com/user-attachments/assets/05dcffe4-890c-41a6-b11b-d2680c3d07cd](https://github.com/user-attachments/assets/05dcffe4-890c-41a6-b11b-d2680c3d07cd)" />
+  
+<img width="847" height="617" alt="image" src="https://github.com/user-attachments/assets/80e57750-58c3-498b-b19d-d5233cdcd7af" />
 
 - **Resultado observado:** Se aprecia el despliegue detallado de las unidades organizativas y la jerarquía de subunidades por áreas de negocio e infraestructura técnica en el directorio.
 
@@ -49,7 +49,8 @@ Para emular un entorno corporativo estructurado, se organizaron los objetos de A
 - **Procedimiento:** Configuración de una GPO (`Política_General`) desde el Editor de administración de directivas de grupo (`gpmc.msc`), aplicando la regla de prohibición de acceso al Panel de control y Configuración de PC.
 - **Evidencia:** 
 
-  <img width="826" height="672" alt="image GPO" src="[https://github.com/user-attachments/assets/564fe7ea-b6ee-4018-9ced-8040a79a4c47](https://github.com/user-attachments/assets/564fe7ea-b6ee-4018-9ced-8040a79a4c47)" />
+  <img width="857" height="650" alt="image" src="https://github.com/user-attachments/assets/8bf52d67-4869-45d6-827c-04c71785230e" />
+
 
 - **Resultado observado:** Se observa la directiva activa aplicada sobre los contenedores para restringir el cambio de parámetros del sistema operativo.
 
