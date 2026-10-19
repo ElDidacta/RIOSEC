@@ -13,7 +13,8 @@ Para la recolección, evaluación y análisis de eventos de seguridad, **RIOSEC*
 ## 🔗 2. Enrolamiento y Estado de Agentes
 Los equipos del laboratorio (tanto virtuales(Lenovo) como físicos(Hp)) se comunican con el servidor central mediante agentes instalados en cada sistema operativo, permitiendo un monitoreo en tiempo real desde el dashboard central (`192.168.1.11`):
 
-<img width="1600" height="942" alt="WhatsApp Image 2026-10-17 at 6 05 51 PM (1)" src="https://github.com/user-attachments/assets/a9fbfaaf-3da4-44c9-af93-f8d717e57fe9" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-10-17 at 6 05 51 PM (1)" src="https://github.com/user-attachments/assets/17831de1-9dc7-455b-b8b9-3e110b4750a7" />
+
 
 
 
